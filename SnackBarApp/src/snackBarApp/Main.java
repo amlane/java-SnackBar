@@ -48,6 +48,17 @@ public class Main {
         sn3.removeQuantity(3);
         System.out.println(cus2.getName() + " has $" + cus2.getCashOnHand());
         System.out.println("There are " + sn3.getQuantity() + " " + sn3.getName() + "s left.");
+
+        System.out.println("Snack: " + sn1.getName() + ", Quantity: " + sn1.getQuantity() + ", Total Inventory: $"
+                + sn1.getTotalCost(sn1.getQuantity()) + "0.");
+        System.out.println("Snack: " + sn2.getName() + ", Quantity: " + sn2.getQuantity() + ", Total Inventory: $"
+                + sn2.getTotalCost(sn2.getQuantity()) + "0.");
+        System.out.println("Snack: " + sn3.getName() + ", Quantity: " + sn3.getQuantity() + ", Total Inventory: $"
+                + sn3.getTotalCost(sn3.getQuantity()) + "0.");
+        System.out.println("Snack: " + sn4.getName() + ", Quantity: " + sn4.getQuantity() + ", Total Inventory: $"
+                + sn4.getTotalCost(sn4.getQuantity()) + "0.");
+        System.out.println("Snack: " + sn5.getName() + ", Quantity: " + sn5.getQuantity() + ", Total Inventory: $"
+                + sn5.getTotalCost(sn5.getQuantity()) + "0.");
     }
 
     public static void main(String[] args) {
