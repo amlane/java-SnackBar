@@ -26,16 +26,18 @@ public class Customer {
         this.name = name;
     }
 
-    public double addCash(double cashOnHand, double deposit) {
-        return cashOnHand + deposit;
-    }
-
-    public double getCash(double cashOnHand) {
+    public double getCashOnHand() {
         return cashOnHand;
     }
 
-    public void setCashOnHand(double cashOnHand) {
-        this.cashOnHand = cashOnHand;
+    public double addCash(double deposit) {
+        this.cashOnHand = this.cashOnHand + deposit;
+        return this.cashOnHand;
+    }
+
+    public double purchase(double withdraw){
+        this.cashOnHand = this.cashOnHand - withdraw;
+        return this.cashOnHand;
     }
 
 }

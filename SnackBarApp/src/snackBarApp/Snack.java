@@ -22,10 +22,6 @@ public class Snack {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
@@ -54,17 +50,18 @@ public class Snack {
         return quantity;
     }
 
-    public int addQuantity(int quantity, int value) {
-        return quantity + value;
+    public int addQuantity(int newQuantity) {
+        this.quantity = this.quantity + newQuantity;
+        return this.quantity;
     }
 
-    public int buySnack(int quantity, int value) {
-        int newQuantity = quantity - value;
-        return newQuantity;
+    public int removeQuantity(int reduceQuantity){
+        this.quantity = this.quantity - reduceQuantity;
+        return this.quantity;
     }
 
-    public double getTotalCost(double cost, int quantity) {
-        return cost * quantity;
+    public double getTotalCost(int quantity){
+        return this.cost * quantity;
     }
 
 }
