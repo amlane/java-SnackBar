@@ -49,10 +49,20 @@ public class Main {
                 System.out.println(cus2.getName() + " has $" + cus2.getCashOnHand());
                 System.out.println("There are " + sn3.getQuantity() + " " + sn3.getName() + "s left.");
 
+                // Stretch
+                System.out.println();
+                System.out.println(sn1.toString());
+                System.out.println(sn2.toString());
+                System.out.println(sn3.toString());
+                System.out.println(sn4.toString());
+                System.out.println(sn5.toString());
+                System.out.println();
+
+                // Alternative Stretch
                 System.out.println("Snack: " + sn1.getName() + "\nQuantity: " + sn1.getQuantity()
                                 + "\nTotal Inventory: $" + sn1.getTotalCost(sn1.getQuantity()) + "0"
                                 + "\nVending Machine: " + vm1.getName());
-                System.out.println("\nSnack: " + sn2.getName() + "\nQuantity: " + sn2.getQuantity()
+                System.out.println("Snack: " + sn2.getName() + "\nQuantity: " + sn2.getQuantity()
                                 + "\nTotal Inventory: $" + sn2.getTotalCost(sn2.getQuantity()) + "0"
                                 + "\nVending Machine: " + vm1.getName());
                 System.out.println("Snack: " + sn3.getName() + "\nQuantity: " + sn3.getQuantity()
@@ -64,6 +74,8 @@ public class Main {
                 System.out.println("Snack: " + sn5.getName() + "\nQuantity: " + sn5.getQuantity()
                                 + "\nTotal Inventory: $" + sn5.getTotalCost(sn5.getQuantity()) + "0"
                                 + "\nVending Machine: " + vm2.getName());
+                System.out.println();
+
         }
 
         public static void main(String[] args) {

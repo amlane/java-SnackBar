@@ -42,6 +42,16 @@ public class Snack {
         return vendingMachineId;
     }
 
+    public String getVendingMachineName(int id) {
+        if (id == 1) {
+            return "Food";
+        } else if (id == 2) {
+            return "Drink";
+        } else {
+            return "Office";
+        }
+    }
+
     public void setVendingMachineId(int vendingMachineId) {
         this.vendingMachineId = vendingMachineId;
     }
@@ -55,13 +65,20 @@ public class Snack {
         return this.quantity;
     }
 
-    public int removeQuantity(int reduceQuantity){
+    public int removeQuantity(int reduceQuantity) {
         this.quantity = this.quantity - reduceQuantity;
         return this.quantity;
     }
 
-    public double getTotalCost(int quantity){
+    public double getTotalCost(int quantity) {
         return this.cost * quantity;
+    }
+
+    @Override
+    public String toString() {
+        String rtnStr = "Snack: " + name + "\nQuantity: " + quantity + "\nTotal Inventory: $"
+                + getTotalCost(getQuantity()) + "\nVending Machine: " + getVendingMachineName(getVendingMachineId());
+        return rtnStr;
     }
 
 }
